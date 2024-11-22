@@ -9,7 +9,7 @@ import Badge from './Badge'
 
 const Hero = () => {
   return (
-    <section className="h-screen flex justify-center items-center bg-[#ecf0f3] dark:bg-transparent">
+    <section className="h-screen flex justify-center items-center bg-blue-50 dark:bg-transparent">
       <div className="container px-5 mx-auto">
         <div className="flex justify-between gap-x-8">
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
@@ -37,7 +37,9 @@ const Hero = () => {
         </div>
         <div className="flex justify-center items-center">
           <div className="absolute bottom-20 xl:bottom-25 animate-bounce">
-            <RiArrowDownLine className="text-3xl text-primary" />
+            <Link href="/#about">
+              <RiArrowDownLine className="text-3xl text-primary" />
+            </Link>
           </div>
         </div>
       </div>
